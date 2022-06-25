@@ -63,8 +63,6 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
-    /* outline: 1px solid teal; */
 }
 
 .page-header {
@@ -163,6 +161,8 @@ img {
 
 .contacts .icon {
     margin-right: 10px;
+
+    fill: currentColor;
 }
 
 .contacts .icon:hover,
@@ -253,11 +253,14 @@ img {
 }
 
 .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
 
     background-color: var(--bcg-button);
-    padding: 25px 100px;
+    margin-bottom: 30px;
 }
 
 .section-benefits .item-title {
@@ -310,12 +313,12 @@ img {
 }
 
 .section-team {
+    padding-top: 94px;
     padding-bottom: 94px;
-    margin-bottom: 94px;
 }
 
 .section-team .section-title {
-    padding-top: 94px;
+    /* padding-top: 94px; */
 }
 
 .section-team .section-item {
@@ -358,7 +361,7 @@ img {
     width: 20px;
     height: 20px;
     
-    fill: var(--icon-fill);
+    fill: currentColor;
 }
 
 .social-links .social-item:not(:last-child) {
@@ -366,27 +369,26 @@ img {
 }
 
 .social-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-    padding: 12px 12px;
     
+    
+    color: var(--icon-fill);
     background: #FFFFFF;
     border-radius: 50%;
-}
-
-.social-link .icon:hover,
-.social-link .icon:focus {
-    fill: var(--bcg-main);
 }
 
 .social-link:hover,
 .social-link:focus {
     background-color: var(--icon-bckg-hover);
+    color: var(--bcg-main);
 }
 
 .clients {
-    margin-bottom: 94px;
+    padding: 94px 0;
 }
 
 .client-list {
@@ -397,31 +399,30 @@ img {
     margin-right: 30px;
 }
 
-.client-button {
+.icon-logo {
+    width: 106px;
+    height: 60px;
+
+    fill: currentColor;
+}
+
+.client-link {
+    display: block;
     padding: 16px 32px;
 
     width: 170px;
     height: 92px;
 
+    color: var(--icon-fill);
     background-color: var(--bcg-main);
     border: 1px solid var(--icon-fill);
     border-radius: 4px;
 }
 
-.client-button:hover,
-.client-button:focus {
+.client-link:hover,
+.client-link:focus {
     border-color: var(--icon-bckg-hover);
-}
-
-.icon-logo {
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-fill);
-}
-
-.icon-logo:hover,
-.icon-logo:focus {
-    fill: var(--icon-bckg-hover);
+    color: var(--icon-bckg-hover);
 }
 
 /* Footer */
@@ -471,7 +472,6 @@ img {
 
 .join {
     padding-top: 12px;
-    padding-bottom: 40px;
 }
 
 .join .text {
@@ -553,6 +553,15 @@ img {
     margin-left: 30px;
 }
 
+.list-item .link {
+    display: inline-block;
+}
+
+ .list-item .link:hover,
+ .list-item .link:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .card-content {
     padding: 20px 24px;
 
@@ -581,10 +590,7 @@ img {
     line-height: 1.9;
 }
 
-.card-set .list-item:hover,
-.card-set .list-item:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 
 /* .cards  {
     display: flex;
