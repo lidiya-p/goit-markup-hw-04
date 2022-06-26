@@ -407,8 +407,9 @@ img {
 }
 
 .client-link {
-    display: block;
-    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 170px;
     height: 92px;
@@ -434,12 +435,6 @@ img {
 
 .page-footer .container {
     display: flex;
-}
-
-
-.footer .social-link {
-    /* align-items: flex-start;
-    justify-content: flex-start; */
 }
 
 .page-footer .logo {
